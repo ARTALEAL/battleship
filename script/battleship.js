@@ -43,7 +43,7 @@ var model = { //Модель поведения
                     }
                 }
                 view.displayMiss(guess);
-                view.displayMessage("Не попал, не попал - мозила!");
+                view.displayMessage("Не попал, не попал - мазила!");
                 return false;
             },
 
