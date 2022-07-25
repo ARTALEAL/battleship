@@ -33,7 +33,7 @@ var model = { //Модель поведения
                     } else if (index >= 0) {
                         ship.hits[index] = "hit";
                         view.displayHit(guess);
-                        view.displayMessage("Бдышь!!! Попал, ска");
+                        view.displayMessage("Бдышь!!! Попадание!");
         
                         if (this.isSunk(ship)) {
                             view.displayMessage("Милорд, корабль потоплен!");
