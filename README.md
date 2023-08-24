@@ -16,4 +16,4 @@
 
 ## Запуск игры
 
-- [НАЧАТЬ ИГРУ](artaleal.github.io/battleship/)
+- [НАЧАТЬ ИГРУ](https://artaleal.github.io/battleship/)
