@@ -1,14 +1,20 @@
+:root {
+  --index: calc(1vh + 1vw);
+}
+
 body {
   background-color: black;
   padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-
 div#board {
   position: relative;
-  width: 1024px;
-  height: 863px;
+  width: calc(var(--index) * 57);
+  height: calc(var(--index) * 49);
   margin: auto;
   background: url(../images/board.jpg) no-repeat;
+  background-size: cover;
 }
 
 tbody:hover {
@@ -20,24 +26,25 @@ div#messageArea {
   top: 0px;
   left: 0px;
   color: rgba(93, 136, 28, 0.99);
-  font-size: 200%;
+  font-size: calc(var(--index) * 2);
 }
 table {
   position: absolute;
-  left: 173px;
-  top: 98px;
+  left: calc(var(--index) * 10);
+  top: calc(var(--index) * 5.4);
   border-spacing: 0px;
-  border: 1px solid #36600e; /*убрать по готовности*/
+  /* border: 1px solid #36600e; убрать по готовности*/
 }
 td {
-  width: 92px;
-  height: 92px;
-  border: 1px solid #36600e; /*убрать по готовности*/
+  width: calc(var(--index) * 5.17);
+  height: calc(var(--index) * 5.29);
+  /* border: 1px solid #36600e; убрать по готовности*/
 }
 form {
   position: absolute;
-  bottom: 0px;
-  right: 0px;
+  top: 5px;
+  right: 50%;
+  transform: translateX(95%);
   padding: 12px;
   background: #36600e;
   background: -moz-linear-gradient(
@@ -75,7 +82,7 @@ form input {
     #304f09 50%,
     #1a2a05 100%
   );
-  font-size: 1em;
+  font-size: calc(var(--index) * 1);
   font-weight: bold;
   color: white;
   text-transform: uppercase;
@@ -84,8 +91,12 @@ form input {
   color: #e40000;
 }
 .hit {
-  background: url(../images/ship.png) no-repeat center center;
+  background: url(../images/ship.png) no-repeat;
+  background-position: center;
+  background-size: calc(var(--index) * 4.8);
 }
 .miss {
-  background: url(../images/miss.png) no-repeat center center;
+  background: url(../images/miss.png) no-repeat;
+  background-position: center;
+  background-size: calc(var(--index) * 4.8);
 }
